@@ -1,38 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- TOC -->
 
-## Getting Started
+- [Project Details 💼](#project-details-)
+  - [What is this project about ?](#what-is-this-project-about-)
+  - [What are the technologies used ?](#what-are-the-technologies-used-)
+  - [Working Demo](#working-demo)
+- [Setup Instructions 📖](#setup-instructions-)
+  - [Frontend 🚀](#frontend-)
+  - [Backend 🚀](#backend-)
+    - [`develop`](#develop)
+    - [`start`](#start)
+    - [`build`](#build)
+    - [⚙️ Deployment](#️-deployment)
+    - [📚 Learn more](#-learn-more)
 
-First, run the development server:
+<!-- /TOC -->
+
+# Project Details 💼
+
+## What is this project about ? 
+
+This project is basically an e-commerce platform that is used to buy different kinds of shoes online. The user can select their particular size of shoes and then add it to the cart and after that, they can choose the number of products they want and finally, they can place their order and purchase it.
+
+## What are the technologies used ?
+
+The technologies used in this project are as follows:
+
+1. **`Next.js`** --> It is a React framework that is used to build the frontend of the application.Leverages React's server-side rendering capabilities and huge out-of-the-box features like file-based routing, API routes, and more. <br/><br/>
+2. **`Tailwind CSS`** --> It is a utility-first CSS framework that is used to style the application. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override. <br/><br/>
+3. **`Strapi`** --> It is a headless CMS that is used to build the backend of the application. It is an open-source, self-hosted, and customizable content management system (CMS) that is built with Node.js and React. It is a fully open-source JavaScript-based, and frontend-agnostic headless CMS. <br/><br/>
+4. **`Cloudinary`** --> It is a cloud-based image and video management service that is used to store the images of the products. It is a cloud-based image and video management service that allows you to upload, store, manage, manipulate, and deliver images and video for your websites and apps. <br/><br/>
+5. **`Stripe`** --> It is a payment processing platform that is used to make the payment. In this case we are using it so that the users can make their orders after buying the products. <br/><br/>
+6. **`Postegresql`** --> It is a relational database management system that is used to store the data of the users. It is a free and open-source relational database management system emphasizing extensibility and SQL compliance. <br/><br/>
+
+## Working Demo
+
+---
+
+# Setup Instructions 📖
+
+
+## Frontend 🚀
+
+Install the dependencies & start the development server (frontend)
+
+```bash
+npm install
+npm run dev
+```
+
+## Backend 🚀
+
+Change the directory to the backend and then install the dependencies 
+
+```bash
+cd server
+npm install
+```
+
+Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds. Do one of the following
+
+### `develop`
+Start your Strapi application with autoReload enabled. **Recommended for Development** [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### `start`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### `build`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### ⚙️ Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 📚 Learn more
 
-## Deploy on Vercel
+- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
+- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
+- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
+- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
+- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
